@@ -937,7 +937,7 @@ export const TOKEN_CONTRACT_ABI = [
     inputs: [
       {
         internalType: 'address',
-        name: 'recipient',
+        name: 'to',
         type: 'address',
       },
       {
@@ -961,12 +961,12 @@ export const TOKEN_CONTRACT_ABI = [
     inputs: [
       {
         internalType: 'address',
-        name: 'sender',
+        name: 'from',
         type: 'address',
       },
       {
         internalType: 'address',
-        name: 'recipient',
+        name: 'to',
         type: 'address',
       },
       {
@@ -995,6 +995,13 @@ export const TOKEN_CONTRACT_ABI = [
       },
     ],
     name: 'transferOwnership',
+    outputs: [],
+    stateMutability: 'nonpayable',
+    type: 'function',
+  },
+  {
+    inputs: [],
+    name: 'withdraw',
     outputs: [],
     stateMutability: 'nonpayable',
     type: 'function',
